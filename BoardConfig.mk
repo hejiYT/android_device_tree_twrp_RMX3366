@@ -98,21 +98,13 @@ BOARD_SUPER_PARTITION_SIZE := 10200547328
 BOARD_SUPER_PARTITION_GROUPS := qti_dynamic_partitions
 BOARD_QTI_DYNAMIC_PARTITIONS_SIZE := 10196353024
 BOARD_QTI_DYNAMIC_PARTITIONS_PARTITION_LIST := \
-    my_bigball \
-     my_carrier \
-      my_company \
-       my_engineering \
-        my_heytap \
-         my_manifest \
-          my_preload \
-           my_product \
-            my_region \
-             my_stock \
-              odm \
-               product \       
-                system \
-                 system_ext \
-                  vendor 
+    system \
+	system_ext \
+    vendor \
+    product \
+    odm
+
+
 
 # Workaround for error copying vendor files to recovery ramdisk
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
